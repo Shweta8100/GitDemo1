@@ -1,0 +1,33 @@
+To Push the local repository to Remote repository using bash
+    1. Create repository on remote(On github).  
+    2. On local machin select the project folder.
+    3. Initailize the folder( git starts tracking your project folder/file).
+
+		git init
+    
+    4. From above steps move project from working directory to staging area by add.
+
+		git add filename
+		or 
+		git add .
+
+    5. Then move stating to local repo using (git commit -m command).
+
+		git commit -m '1st commit.index file'	
+
+    6. Then check set global name & email id. 
+
+		git config --global user.email
+		git config --global user.name
+
+    7. If not set  then set name & email global.
+       
+       		git config --global user.email ‘shweta@wemootiveforge.com’
+       		git config --global user.name ‘Shweta8100’
+       
+    8. Then push local repo to remote using command. 
+       
+       		git remote add origin https://github.com/Shweta8100/GitDemo1.git
+       		git push -u origin master
+       
+    9. Then  refresh the remote github page and check. 
